@@ -27,3 +27,5 @@ assertEqual(words.length, 3); // original array should still have 3 elements!
 const test = tail(["Mike"]);
 assertEqual(test.length, 0)
 
+const test2 = tail([]);
+assertEqual(test2.length, 0)
