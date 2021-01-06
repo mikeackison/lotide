@@ -7,9 +7,9 @@ const eqArrays = function(firstParam, secondParam) {
     if (firstParam[i] !== secondParam[i]) {
       return false;
     }
-
-    return true;
+    
   }
+  return true;
 };
 
 const assertArraysEqual = function(actual, expected) {
