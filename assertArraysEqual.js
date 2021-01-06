@@ -10,7 +10,7 @@ const eqArrays = function(firstParam, secondParam) {
       return false;
     }
     
-  return true;
+    return true;
   }
 };
 
@@ -23,5 +23,5 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 
-assertArraysEqual(["Hello"], [1,2,3,4])
-assertArraysEqual(["Hello"], ["Hello"])
+assertArraysEqual(["Hello"], [1,2,3,4]);
+assertArraysEqual(["Hello"], ["Hello"]);
