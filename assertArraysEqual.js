@@ -6,8 +6,8 @@ const eqArrays = function(firstParam, secondParam) {
   }
   for (let i = 0; i < firstParam.length; i++) {
   
-    if (firstParam[i] === secondParam[i]) {
-      return true;
+    if (firstParam[i] !== secondParam[i]) {
+      return false;
     }
     
   return true;
