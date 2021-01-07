@@ -29,30 +29,30 @@ const letterPositions = function(sentence) {
   const results = {};
   // accept a string as a paramenter
   if (typeof sentence !== 'string') {
-    console.log("that wans't a string")
+    console.log("that wans't a string");
     return results;
   }
     
-    // iterate though the string
-    for (let i = 0; i < sentence.length; i++) {
+  // iterate though the string
+  for (let i = 0; i < sentence.length; i++) {
      
-      let char = sentence[i];
+    let char = sentence[i];
 
-      // if the letter does not exist as a refrence in the object,
-      // create it as a key and 
-      if (!results[char]) {
-      results[char] = []
-      }
+    // if the letter does not exist as a refrence in the object,
+    // create it as a key and
+    if (!results[char]) {
+      results[char] = [];
+    }
 
-      // otherwise the letter does exist, push it's index locattion to the value array 
-      results[char].push(i)
+    // otherwise the letter does exist, push it's index locattion to the value array
+    results[char].push(i);
 
-    } 
+  }
   return results;
 };
 
 
-console.log(letterPositions("hello"))
+console.log(letterPositions("hello"));
 
 assertArraysEqual(letterPositions("hello").e, [1]);
 assertArraysEqual(letterPositions("hello").l, [2, 3]);
