@@ -24,6 +24,7 @@ const assertArraysEqual = function(actual, expected) {
 const takeUntil = function(array, callback) {
   let newArray = []
   for (let word of array) {
+    // the callback checks a function that returns a boolean
     if (!callback(word)) {
       newArray.push(word)
     } else {
