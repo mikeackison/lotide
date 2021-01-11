@@ -1,13 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅  Assertion Passed: ${actual} === ${expected}`);
-
-  } else {
-    console.log(`❌  Assertion Failed: ${actual} !== ${expected}`);
-
-  }
-
-};
 
 const eqArrays = function(firstParam, secondParam) {
   if (firstParam.length !== secondParam.length) {
@@ -28,14 +18,7 @@ const eqArrays = function(firstParam, secondParam) {
 
 };
 
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // should FAIL
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // should FAIL
-
+module.exports = eqArrays 
 
 //determine if the arrays are the smae type of object? and the same length
 // iterate thorough both arrays and compare
