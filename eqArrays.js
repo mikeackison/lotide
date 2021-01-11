@@ -18,8 +18,4 @@ const eqArrays = function(firstParam, secondParam) {
 
 };
 
-module.exports = eqArrays 
-
-//determine if the arrays are the smae type of object? and the same length
-// iterate thorough both arrays and compare
-// can use hte same index for both, because they are the same length.
+module.exports = eqArrays
