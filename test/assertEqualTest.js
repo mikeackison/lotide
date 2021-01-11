@@ -3,8 +3,6 @@ const assertEqual = require('../assertEqual');
 // in the test dir, and the file we are testing ins in the ltide dir
 // note: this was the "testing code" we removed from the assertEqual file.
 
-
-
 assertEqual('"Lighthouse Labs"', '"Bootcamp"');
 assertEqual(1, 1);
 assertEqual('"Lighthouse Labs"', '"Lighthouse Labs"');
