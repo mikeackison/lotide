@@ -1,28 +1,3 @@
-const eqArrays = function(firstParam, secondParam) {
-  if (firstParam.length !== secondParam.length) {
-    return false;
-  }
-  for (let i = 0; i < firstParam.length; i++) {
-  
-    if (firstParam[i] !== secondParam[i]) {
-      return false;
-    }
-  
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅  Assertion Passed: ${actual} === ${expected} is true`);
-  } else {
-    console.log(`❌  Assertion Failed: ${actual} === ${expected} is false`);
-  }
-};
-
-
-
-
 const letterPositions = function(sentence) {
   // create an acumuator to return
 
@@ -51,12 +26,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-
-console.log(letterPositions("hello"));
-
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("hello").l, [2, 3]);
-
+module.exports = letterPositions
 
 // accept a string as a paramenter
 // create an acumuator to return
